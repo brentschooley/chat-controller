@@ -1,0 +1,21 @@
+{
+  "name": "chat-controller",
+  "version": "0.0.1",
+  "description": "Uses a PS4 controller to send SNES buttons to a Twitch channel.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "twitch",
+    "snes",
+    "twitchplays"
+  ],
+  "author": "Brent Schooley",
+  "license": "ISC",
+  "dependencies": {
+    "dank-twitch-irc": "^4.2.0",
+    "inquirer": "^7.3.3",
+    "node-gamepad": "^0.1.15"
+  }
+}
