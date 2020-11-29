@@ -4,7 +4,7 @@ Uses a PS4 controller to send SNES buttons to a Twitch channel.
 #### 1. Clone project and install dependencies
 
 ```bash
-git clone 
+git clone git@github.com:brentschooley/chat-controller.git
 cd chat-controller
 npm install
 ```
