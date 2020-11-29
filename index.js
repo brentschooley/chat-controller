@@ -39,17 +39,17 @@ inquirer.prompt(questions).then((answers) => {
   var controller = new GamePad("ps4/dualshock4");
   controller.connect();
 
-  controller.on("dpadUp:press", function () {
+  controller.on("dpadUp:press", () => {
     console.log(`Sending up to ${channel}...`);
     client.say(channel, "up");
   });
 
-  controller.on("dpadDown:press", function () {
+  controller.on("dpadDown:press", () => {
     console.log(`Sending down to ${channel}...`);
     client.say(channel, "down");
   });
 
-  controller.on("dpadLeft:press", function () {
+  controller.on("dpadLeft:press", () => {
     console.log(`Sending left to ${channel}...`);
     client.say(channel, "left");
   });
@@ -59,42 +59,42 @@ inquirer.prompt(questions).then((answers) => {
     client.say(channel, "right");
   });
 
-  controller.on("share:press", function () {
+  controller.on("share:press", () => {
     console.log(`Sending select to ${channel}...`);
     client.say(channel, "select");
   });
 
-  controller.on("options:press", function () {
+  controller.on("options:press", () => {
     console.log(`Sending start to ${channel}...`);
     client.say(channel, "start");
   });
 
-  controller.on("x:press", function () {
+  controller.on("x:press", () => {
     console.log(`Sending B to ${channel}...`);
     client.say(channel, "B");
   });
 
-  controller.on("circle:press", function () {
+  controller.on("circle:press", () => {
     console.log(`Sending A to ${channel}...`);
     client.say(channel, "A");
   });
 
-  controller.on("square:press", function () {
+  controller.on("square:press", () => {
     console.log(`Sending Y to ${channel}...`);
     client.say(channel, "Y");
   });
 
-  controller.on("triangle:press", function () {
+  controller.on("triangle:press", () => {
     console.log(`Sending X to ${channel}...`);
     client.say(channel, "X");
   });
 
-  controller.on("r1:press", function () {
+  controller.on("r1:press", () => {
     console.log(`Sending RT to ${channel}...`);
     client.say(channel, "RT");
   });
 
-  controller.on("l1:press", function () {
+  controller.on("l1:press", () => {
     console.log(`Sending LT to ${channel}...`);
     client.say(channel, "LT");
   });
