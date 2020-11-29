@@ -12,7 +12,7 @@
     "twitchplays"
   ],
   "author": "Brent Schooley",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "dank-twitch-irc": "^4.2.0",
     "inquirer": "^7.3.3",
